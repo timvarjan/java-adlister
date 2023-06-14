@@ -1,16 +1,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html>
 <head>
-    <jsp:include page="partials/head.jsp">
-        <jsp:param name="title" value="Your Profile" />
-    </jsp:include>
+    <title>Profile</title>
+    <%@ include file="partials/head.jsp" %>
 </head>
 <body>
-    <jsp:include page="partials/navbar.jsp" />
 
-    <div class="container">
-        <h1>Viewing your profile.</h1>
-    </div>
+<%@ include file="partials/navbar.jsp" %>
+<h1>Welcome To The Site!</h1>
+<p>You are logged in</p>
 
 </body>
 </html>
