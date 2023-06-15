@@ -1,15 +1,9 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-  <title>Pick a Color</title>
-</head>
-<body>
-<h1>Pick Your Favorite Color</h1>
-<form action="viewColor.jsp" method="POST">
-  <label for="color">Favorite Color:</label>
-  <input type="text" name="color" id="color">
-  <br><br>
-  <input type="submit" value="Submit">
+<h1>What color will it be?</h1>
+<form action="/pickcolor" method="POST">
+  <h3>Type in a color</h3>
+  <div class="input-group mb-3">
+    <input name="color" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+
 </form>
-</body>
-</html>

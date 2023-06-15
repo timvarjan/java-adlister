@@ -5,13 +5,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "ViewColorServlet", urlPatterns = "/viewcolor")
-public class ViewColorServlet extends HttpServlet {
+@WebServlet(name = "GuessCorrectServlet", urlPatterns = "/correct")
+public class GuessCorrectServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        request.getRequestDispatcher("viewColor.jsp").forward(request, response);
+        request.setAttribute("outcome", "You are a winner");
+        request.getRequestDispatcher("guessResult.jsp").forward(request, response);
 
     }
 
-
 }
-
